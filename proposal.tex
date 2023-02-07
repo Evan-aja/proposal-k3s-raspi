@@ -1,0 +1,125 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[backend=bibtex]{biblatex}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{titlesec}
+\usepackage{placeins}
+\addbibresource{references.bib}
+
+\newcommand{\imagesource}[1]{{\footnotesize Sumber: #1}}
+\renewcommand{\contentsname}{Daftar Isi}
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+\renewcommand{\figurename}{Gambar}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\textbf{\huge Proposal Penelitian}\vspace{1cm}
+
+\textbf{\Large Tentang}\vspace{1cm}
+
+\textbf{\LARGE Purwarupa Implementasi Kubernetes Menggunakan Raspberry Pi untuk Menciptakan Lingkungan Peluncuran Aplikasi Web yang Dapat Diskala}\vspace{3cm}
+
+\includegraphics[width=2in]{pictures/cover_ub.png}\vspace{3cm}
+
+\textbf{\large Oleh:}\vspace{0.5cm}
+
+Gabrielle Evan Farrel\vspace{0.25cm}
+
+Reza Andria Siregar, S.T., M.Kom\vspace{1cm}
+
+\textbf{\Large Fakultas Ilmu Komputer}
+
+\textbf{\Large Universitas Brawijaya}
+
+\textbf{\Large Malang 2023}
+\end{center}
+\end{titlepage}
+
+\begin{center}
+{\Large \textbf{HALAMAN PENGESAHAN}}
+\end{center}
+
+\begin{enumerate}
+\item[a.] Judul Penelitian : Purwarupa Implementasi Kubernetes Menggunakan Raspberry\\
+\phantom{Judul Penelitian :} Pi untuk Menciptakan Lingkungan Peluncuran Aplikasi Web\\
+\phantom{Judul Penelitian :} yang Dapat Diskala
+\item[b.] Bidang Ilmu : Komputasi Berbasis Jaringan
+\item[c.] Peneliti Utama
+\begin{itemize}
+\item Nama : Gabrielle Evan Farrel
+\item NIM : 205150201111033
+\end{itemize}
+\item[d.] Anggota Peneliti
+\begin{itemize}
+\item Nama : Reza Andria Siregar, S.T., M.Kom
+\item NIP/NIDN : 197906212006041003/0021067909
+\item Bidang Keahlian : Jaringan Nirkabel
+\end{itemize}
+\item[e.] Mahasiswa Peneliti
+\begin{itemize}
+\item Nama : Muhammad Muhajir Kurniawan
+\item NIM : 165150207111043
+\item Nama : Haidar Harfi Hadhiansah
+\item NIM : 205150209111005
+\end{itemize}
+\item[f.] Waktu Penelitian : 6 bulan (Mei – Oktober 2022)
+\item[g.] Biaya Penelitian
+\begin{itemize}
+\item Sumber DIPA : Rp 9.900.000, -
+\item Sumber Lain : -
+\item Total : Rp 9.900.000, -
+\item Terbilang : Sembilan juta Sembilan ratus ribu rupiah
+\end{itemize}
+\end{enumerate}
+
+\begin{flushright}
+Malang, 4 Februari 2023 \hspace{2.5cm}
+
+Peneliti \hspace{5.4cm}
+\vspace{1.5cm}
+
+Gabrielle Evan Farrel \hspace{3.04cm}
+
+NIM. 205150201111033 \hspace{2.74cm}
+
+\end{flushright}
+
+\begin{flushleft}
+Mengetahui \hspace{7.7cm} Menyetujui \\
+Dekan FILKOM \hspace{6.85cm} Ketua BPPM FILKOM \\
+\vspace{1.5cm}
+Wayan Firdaus Mahmudy, S.Si., M.T., Ph.D \hspace{1.7cm} Bayu Rahayudi, M.T., M.M \
+NIP. 197209191997021001 \hspace{6.05cm} NIP. 197407122006041001    
+\end{flushleft}
+
+\section*{Abstrak}
+Implementasi Kubernetes pada Raspberry Pi untuk menciptakan lingkungan peluncuran aplikasi web yang dapat didiskalakan akan diteliti dan diuji coba. Dengan tujuan membuktikan bahwa Kubernetes dapat dioperasikan pada perangkat keras yang lebih kecil seperti Raspberry Pi dan menciptakan lingkungan peluncuran aplikasi web yang efisien dan dapat didiskalakan. Hasil dari penelitian ini akan dipresentasikan dalam bentuk dokumentasi yang memudahkan pemahaman dan mengimplementasikan kluster Kubernetes sendiri menggunakan Raspberry Pi dan Ansible untuk otomatisasi. Dengan demikian, proyek ini bertujuan untuk memperkaya pengetahuan dan memberikan solusi praktis bagi mereka yang ingin belajar membuat kluster Kubernetes dengan Ansible dan menggunakan K3s sebagai server.
+
+\begin{flushleft}
+KATA KUNCI : Kubernetes, Raspberry Pi, K3s, Ansible, otomatisasi, kluster 
+\end{flushleft}
+\newpage
+
+\tableofcontents
+\newpage
+
+% \input{bab1}
+% \input{bab2}
+\include{bab1}
+\include{bab2}
+\section{Proposed Methodology}
+Outline the experimental and theoretical methods specific to the proposed research. Justify the choice of methods as opposed to alternatives. Avoid giving too much detailed information; just outline the general approach and why you chose to use them
+
+\section{Research Plan}
+State the long - and short -term objectives of your research program. Outline specific projects planned to meet these goals, including the timelines for completion of each stage, methods to be used, and dissemination of results. 
+
+\section{Resources}
+Provide details on the instrumentation and materials needed, along with the estimates of human resources required for each project/activity throughout the lifetime of the project
+\cite{cloud_computing}
+
+\printbibliography
+
+\end{document}
