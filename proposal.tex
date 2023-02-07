@@ -13,6 +13,9 @@
 \renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
 \renewcommand{\figurename}{Gambar}
 
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{Bab. \thesection}{1em}{}
+
 \begin{document}
 \begin{titlepage}
 \begin{center}
@@ -97,6 +100,7 @@ NIP. 197209191997021001 \hspace{6.05cm} NIP. 197407122006041001
 
 \section*{Abstrak}
 Implementasi Kubernetes pada Raspberry Pi untuk menciptakan lingkungan peluncuran aplikasi web yang dapat didiskalakan akan diteliti dan diuji coba. Dengan tujuan membuktikan bahwa Kubernetes dapat dioperasikan pada perangkat keras yang lebih kecil seperti Raspberry Pi dan menciptakan lingkungan peluncuran aplikasi web yang efisien dan dapat didiskalakan. Hasil dari penelitian ini akan dipresentasikan dalam bentuk dokumentasi yang memudahkan pemahaman dan mengimplementasikan kluster Kubernetes sendiri menggunakan Raspberry Pi dan Ansible untuk otomatisasi. Dengan demikian, proyek ini bertujuan untuk memperkaya pengetahuan dan memberikan solusi praktis bagi mereka yang ingin belajar membuat kluster Kubernetes dengan Ansible dan menggunakan K3s sebagai server.
+\addcontentsline{toc}{section}{Abstrak}
 
 \begin{flushleft}
 KATA KUNCI : Kubernetes, Raspberry Pi, K3s, Ansible, otomatisasi, kluster 
@@ -110,8 +114,7 @@ KATA KUNCI : Kubernetes, Raspberry Pi, K3s, Ansible, otomatisasi, kluster
 % \input{bab2}
 \include{bab1}
 \include{bab2}
-\section{Proposed Methodology}
-Outline the experimental and theoretical methods specific to the proposed research. Justify the choice of methods as opposed to alternatives. Avoid giving too much detailed information; just outline the general approach and why you chose to use them
+\include{bab3}
 
 \section{Research Plan}
 State the long - and short -term objectives of your research program. Outline specific projects planned to meet these goals, including the timelines for completion of each stage, methods to be used, and dissemination of results. 
@@ -120,6 +123,9 @@ State the long - and short -term objectives of your research program. Outline sp
 Provide details on the instrumentation and materials needed, along with the estimates of human resources required for each project/activity throughout the lifetime of the project
 \cite{cloud_computing}
 
-\printbibliography
+\newpage
+\section*{Referensi}
+\addcontentsline{toc}{section}{Referensi}
+\printbibliography[heading=none]
 
 \end{document}
