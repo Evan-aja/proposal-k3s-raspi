@@ -6,11 +6,17 @@
 \usepackage{titling}
 \usepackage{titlesec}
 \usepackage{placeins}
+\usepackage[table]{xcolor}
+\usepackage{tabularray}
 \addbibresource{references.bib}
 
 \newcommand{\imagesource}[1]{{\footnotesize Sumber: #1}}
 \renewcommand{\contentsname}{Daftar Isi}
+\renewcommand{\listfigurename}{Daftar Gambar}
+\renewcommand{\listtablename}{Daftar Tabel}
 \renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+\renewcommand{\thetable}{\arabic{section}.\arabic{table}}
+\renewcommand{\tablename}{Tabel}
 \renewcommand{\figurename}{Gambar}
 
 \titleformat{\section}
@@ -46,36 +52,36 @@ Reza Andria Siregar, S.T., M.Kom\vspace{1cm}
 \end{center}
 
 \begin{enumerate}
-\item[a.] Judul Penelitian : Purwarupa Implementasi Kubernetes Menggunakan Raspberry\\
-\phantom{Judul Penelitian :} Pi untuk Menciptakan Lingkungan Peluncuran Aplikasi Web\\
-\phantom{Judul Penelitian :} yang Dapat Diskala
-\item[b.] Bidang Ilmu : Komputasi Berbasis Jaringan
-\item[c.] Peneliti Utama
-\begin{itemize}
-\item Nama : Gabrielle Evan Farrel
-\item NIM : 205150201111033
-\end{itemize}
-\item[d.] Anggota Peneliti
-\begin{itemize}
-\item Nama : Reza Andria Siregar, S.T., M.Kom
-\item NIP/NIDN : 197906212006041003/0021067909
-\item Bidang Keahlian : Jaringan Nirkabel
-\end{itemize}
-\item[e.] Mahasiswa Peneliti
-\begin{itemize}
-\item Nama : Muhammad Muhajir Kurniawan
-\item NIM : 165150207111043
-\item Nama : Haidar Harfi Hadhiansah
-\item NIM : 205150209111005
-\end{itemize}
-\item[f.] Waktu Penelitian : 6 bulan (Mei – Oktober 2022)
-\item[g.] Biaya Penelitian
-\begin{itemize}
-\item Sumber DIPA : Rp 9.900.000, -
-\item Sumber Lain : -
-\item Total : Rp 9.900.000, -
-\item Terbilang : Sembilan juta Sembilan ratus ribu rupiah
-\end{itemize}
+  \item[a.] Judul Penelitian : Purwarupa Implementasi Kubernetes Menggunakan Raspberry\\
+  \phantom{Judul Penelitian :} Pi untuk Menciptakan Lingkungan Peluncuran Aplikasi Web\\
+  \phantom{Judul Penelitian :} yang Dapat Diskala
+  \item[b.] Bidang Ilmu : Komputasi Berbasis Jaringan
+  \item[c.] Peneliti Utama
+  \begin{itemize}
+    \item Nama : Gabrielle Evan Farrel
+    \item NIM : 205150201111033
+  \end{itemize}
+    \item[d.] Anggota Peneliti
+  \begin{itemize}
+    \item Nama : Reza Andria Siregar, S.T., M.Kom
+    \item NIP/NIDN : 197906212006041003/0021067909
+    \item Bidang Keahlian : Jaringan Nirkabel
+  \end{itemize}
+    \item[e.] Mahasiswa Peneliti
+  \begin{itemize}
+    \item Nama : Muhammad Muhajir Kurniawan
+    \item NIM : 165150207111043
+    \item Nama : Haidar Harfi Hadhiansah
+    \item NIM : 205150209111005
+  \end{itemize}
+    \item[f.] Waktu Penelitian : 6 bulan (Mei – Oktober 2022)
+    \item[g.] Biaya Penelitian
+  \begin{itemize}
+    \item Sumber DIPA : Rp 9.900.000, -
+    \item Sumber Lain : -
+    \item Total : Rp 9.900.000, -
+    \item Terbilang : Sembilan juta Sembilan ratus ribu rupiah
+  \end{itemize}
 \end{enumerate}
 
 \begin{flushright}
@@ -108,6 +114,10 @@ KATA KUNCI : Kubernetes, Raspberry Pi, K3s, Ansible, otomatisasi, kluster
 \newpage
 
 \tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
 \newpage
 
 % \input{bab1}
