@@ -7,7 +7,11 @@
 \usepackage{titlesec}
 \usepackage{placeins}
 \usepackage[table]{xcolor}
+\usepackage{colortbl}
 \usepackage{tabularray}
+\usepackage{multirow}
+\usepackage{amsmath}
+
 \addbibresource{references.bib}
 
 \newcommand{\imagesource}[1]{{\footnotesize Sumber: #1}}
@@ -18,6 +22,10 @@
 \renewcommand{\thetable}{\arabic{section}.\arabic{table}}
 \renewcommand{\tablename}{Tabel}
 \renewcommand{\figurename}{Gambar}
+
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
 
 \titleformat{\section}
   {\normalfont\Large\bfseries}{Bab. \thesection}{1em}{}
@@ -126,16 +134,11 @@ KATA KUNCI : Kubernetes, Raspberry Pi, K3s, Ansible, otomatisasi, kluster
 \include{bab2}
 \include{bab3}
 
-\section{Research Plan}
-State the long - and short -term objectives of your research program. Outline specific projects planned to meet these goals, including the timelines for completion of each stage, methods to be used, and dissemination of results. 
-
-\section{Resources}
-Provide details on the instrumentation and materials needed, along with the estimates of human resources required for each project/activity throughout the lifetime of the project
-\cite{cloud_computing}
-
 \newpage
 \section*{Referensi}
 \addcontentsline{toc}{section}{Referensi}
 \printbibliography[heading=none]
 
+\include{jadwal}
+\include{anggaran}
 \end{document}
